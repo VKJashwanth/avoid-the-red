@@ -297,12 +297,38 @@
     }
   })
 
+  const rightBtn = document.getElementById("rightBtn")
+  rightBtn.addEventListener("click", () => {
+    keys.d.pressed = true
+    if (keys.d.pressed == true) {
+      cube.velocity.x = 0.05
+    }
+  })
+
+  const jumpBtn = document.getElementById("jumpBtn")
+  jumpBtn.addEventListener("click", () => {
+    keys.w.pressed = true
+    if (keys.w.pressed == true) {
+      cube.velocity.z = -0.05 
+    }
+  })
+
+  const backBtn = document.getElementById("backBtn")
+  backBtn.addEventListener("click", () => {
+    keys.s.pressed = true
+    if (keys.s.pressed == true) {
+      cube.velocity.z = 0.05
+    }
+  })
+
+ 
+
 	
 </script>
 
 <button id="leftBtn">Left</button>
-<button>Right</button>
-<button>Jump</button>
-<button>Move back</button>
+<button id="rightBtn">Right</button>
+<button id="jumpBtn">Jump</button>
+<button id="backBtn">Move back</button>
 
 
