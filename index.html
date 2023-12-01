@@ -318,6 +318,14 @@
     }
   })
 
+  const forwardBtn = document.getElementById("forwardBtn")
+  forwardBtn.addEventListener("click", () => {
+    keys.w.pressed = true
+    if (keys.w.pressed == true) {
+      cube.velocity.z = -0.05
+    }
+  })
+
  
 
 	
@@ -327,5 +335,6 @@
 <button id="rightBtn">Right</button>
 <button id="jumpBtn">Jump</button>
 <button id="backBtn">Move back</button>
+<button id="forwardBtn">Forward</button>
 
 
