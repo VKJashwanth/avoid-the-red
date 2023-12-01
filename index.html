@@ -306,11 +306,8 @@
   })
 
   const jumpBtn = document.getElementById("jumpBtn")
-  jumpBtn.addEventListener("click", () => {
-    keys.w.pressed = true
-    if (keys.w.pressed == true) {
-      cube.velocity.z = -0.05 
-    }
+  window.addEventListener("click", () => {
+    cube.velocity.y = 0.08
   })
 
   const backBtn = document.getElementById("backBtn")
